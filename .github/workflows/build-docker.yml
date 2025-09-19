@@ -1,0 +1,18 @@
+name: Build and Publish image to Docker Hub
+
+on:
+  [workflow_dispatch]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v4
+    - name: build the docker image
+      run: docker build ./shopping/Shopping.Client/ -t allbertoeng/shoppingapp:latest
+    - name: push image
+      run: docker push allbertoeng/shoppingapp:latest
