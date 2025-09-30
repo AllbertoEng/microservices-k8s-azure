@@ -36,4 +36,6 @@ Updated microservices with zero-downtime deployments.
 The final step focused on automation of deployments by creating CI/CD pipelines in Azure DevOps. Separate microservices deployment pipeline YAMLs were developed using Azure Pipelines.
 When code was pushed to GitHub, the microservices pipeline triggered, built docker images, pushed them to ACR, and deployed to Azure Kubernetes Services (AKS) with zero-downtime deployments.
 
-![cicd](https://user-images.githubusercontent.com/1147445/105671542-f37c3700-5ef3-11eb-9532-59a5855214d0.png)
+<img width="1108" height="698" alt="105671542-f37c3700-5ef3-11eb-9532-59a5855214d0" src="https://github.com/user-attachments/assets/680960da-0f89-4260-949f-b73f1277d456" />
+
+
